@@ -1,3 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rtx Next - Fast YouTube Video Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #050816;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    h2 {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #aaa;
+    }
+    main {
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+    .note {
+      font-size: 0.8rem;
+      color: #ccc;
+      margin-top: 10px;
+    }
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rtx Next</h1>
+    <h2>Fast YouTube Video Downloader</h2>
+  </header>
+
+  <main>
+    <label for="url">Paste YouTube video URL</label>
+    <input id="url" type="text" placeholder="https://www.youtube.com/watch?v=..." />
+
+    <div class="buttons">
+      <button type="button">1080p</button>
+      <button type="button">720p</button>
+      <button type="button">480p</button>
+      <button type="button">360p</button>
+      <button type="button">MP3</button>
+      <button type="button" disabled>Download</button>
+    </div>
+
+    <p class="note">
+      The downloader backend is not connected yet.  
+      You can host your own API or use another service later and call it with JavaScript.
+    </p>
+  </main>
+
+  <footer>
+    © 2025 Rtx Next
+  </footer>
+</body>
+</html>
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -98,3 +208,4 @@ function download(){
 
 </body>
 </html>
+
