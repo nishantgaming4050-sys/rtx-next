@@ -105,7 +105,32 @@
 
   <footer>
     © 2025 Rtx Next
-  </footer>
+  </footer><script>
+  // Get elements
+  const urlInput = document.getElementById('url');
+  const buttons = document.querySelectorAll('.buttons button');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const quality = btn.textContent.trim();
+      const url = urlInput.value.trim();
+
+      if (!url) {
+        alert('Please paste a YouTube video URL first.');
+        return;
+      }
+
+      if (btn.disabled) {
+        alert('This is a demo site only. No real downloads happen.');
+        return;
+      }
+
+      alert('Demo: would start download at ' + quality + ' for\\n' + url);
+    });
+  });
+</script>
+
 </body>
 </html>
+
 
